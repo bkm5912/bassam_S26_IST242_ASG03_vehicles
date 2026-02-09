@@ -4,11 +4,16 @@ class Manufacturer:
     '''
     # constructor
     def __init__(self, name: str, country: str):
-        self._name = name
-        self._country = country
+        self.__name = name
+        self.__country = country
 
-
-    # properties
+    # getter functions
     @property
-    def name(self) -> str:
-        return self._name
+    def get_name(self) -> str:
+        return self.__name
+    
+    @property
+    def get_country(self) -> str:
+        return self.__country
+
+

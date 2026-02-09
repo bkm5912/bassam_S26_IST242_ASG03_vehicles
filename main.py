@@ -1,7 +1,8 @@
-import manufacturer
+from manufacturer import Manufacturer
 
 def main():
-    m = manufacturer("ford", "USA")
+    m = Manufacturer("ford", "USA")
+    print(m.get_name)
     pass
 
 if __name__ == "__main__":
