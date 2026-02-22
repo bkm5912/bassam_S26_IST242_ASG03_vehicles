@@ -24,7 +24,6 @@ class Manufacturer:
         """
         return self._country
     
-    @property
     def __str__(self):
         """
         Prints the manufacturer object (name and country)
