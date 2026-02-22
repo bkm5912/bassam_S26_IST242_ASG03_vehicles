@@ -11,3 +11,9 @@ def main():
     print(m.get_name)
     print(m.get_country)
     print(m)
+
+    original_list = [2020, 2021]
+    am = AutoModel("F150", True, original_list)
+    print(am.get_years)
+    original_list.clear
+    print(am.get_years)
