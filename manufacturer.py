@@ -1,19 +1,18 @@
 class Manufacturer:
     '''
-    Docstring for Manufacturer
+    Creates manufacturer class
     '''
-    # constructor
+    # Constructor
     def __init__(self, name: str, country: str):
-        self.__name = name
-        self.__country = country
+        # Name of manufacturer
+        self._name = name
+        # Name of manufacturer's country
+        self._country = country
 
-    # getter functions
+    # Getters (properties)
     @property
-    def get_name(self) -> str:
-        return self.__name
-    
-    @property
-    def get_country(self) -> str:
-        return self.__country
-
-
+    def get_name(self):
+        """
+        Returns the name
+        """
+        return self._name
