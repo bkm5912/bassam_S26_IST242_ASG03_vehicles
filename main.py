@@ -1,9 +1,13 @@
+"""
+Control and logic of the program
+"""
 from manufacturer import Manufacturer
-
+from auto_model import AutoModel
 def main():
-    m = Manufacturer("ford", "USA")
+    """
+    Main function, control the rest of the program/call functions
+    """
+    m = Manufacturer("Ford", "USA")
     print(m.get_name)
-    pass
-
-if __name__ == "__main__":
-    main()
+    print(m.get_country)
+    print(m)
