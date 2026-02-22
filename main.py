@@ -17,3 +17,7 @@ def main():
     print(am.get_years)
     original_list.clear
     print(am.get_years)
+
+
+if __name__ == "__main__":
+    main()
