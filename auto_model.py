@@ -16,21 +16,21 @@ class AutoModel:
 
     # Properties
     @property
-    def get_name(self):
+    def name(self):
         """
         Returns the name
         """
         return self._name
     
     @property
-    def get_in_production(self):
+    def in_production(self):
         """
         Returns if it's still in production
         """
         return self._in_production
     
     @property
-    def get_years(self):
+    def years(self):
         """
         Returns the years of production
         """
