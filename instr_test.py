@@ -12,8 +12,8 @@ All tests must pass for full credit.
 import pytest
 from manufacturer import Manufacturer
 from auto_model import AutoModel
-# from vehicle import Vehicle
-# from sedan import Sedan
+from vehicle import Vehicle
+from sedan import Sedan
 # from truck import Truck
 # from garage import Garage
 
