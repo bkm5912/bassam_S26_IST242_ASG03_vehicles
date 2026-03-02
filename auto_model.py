@@ -36,6 +36,10 @@ class AutoModel:
         """
         return list(self._years)
     
+    @property
+    def first_year(self):
+        return min(self._years)
+    
     def __str__(self):
         return f"{self._name} inproduction = {self._in_production}"
         f"  release years = {self._years}"
