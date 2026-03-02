@@ -43,5 +43,5 @@ class AutoModel:
         return min(self._years)
     
     def __str__(self):
-        return f"{self._name} inproduction = {self._in_production}"
-        f"  release years = {self._years}"
+        years_str = ", ".join(str(y) for y in self._years)
+        return f"{self._name} inproduction = {self._in_production}, years = {years_str}"
