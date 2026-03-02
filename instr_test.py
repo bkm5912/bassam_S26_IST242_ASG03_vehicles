@@ -14,7 +14,7 @@ from manufacturer import Manufacturer
 from auto_model import AutoModel
 from vehicle import Vehicle
 from sedan import Sedan
-# from truck import Truck
+from truck import Truck
 # from garage import Garage
 
 
@@ -166,7 +166,7 @@ class TestSedan:
 #  Truck tests
 # ============================================================
 
-"""
+
 class TestTruck:
 
     @pytest.fixture
@@ -228,7 +228,7 @@ class TestTruck:
     def test_is_instance_of_vehicle(self, f150):
         assert isinstance(f150, Vehicle)
 
-
+"""
 # ============================================================
 #  Comparable / ordering tests
 # ============================================================
