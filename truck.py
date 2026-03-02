@@ -32,7 +32,7 @@ class Truck(Vehicle):
     def is_dually(self) -> bool:
         return self._is_dually
     
-    # Printing sedan
+    # Printing truck
     def __str__(self) -> str:
         return (
             f"({self._manufacturer}) {self._model}, mpg: {self._mpg:.2f}"
