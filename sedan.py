@@ -19,6 +19,11 @@ class Sedan(Vehicle):
     def number_of_wheels(self) -> int:
         return 4
     
+    # Create release year getter
+    @property
+    def release_year(self):
+        return self.model.first_year
+    
     # Printing sedan
     def __str__(self) -> str:
         return (
