@@ -40,7 +40,10 @@ class AutoModel:
     
     @property
     def first_year(self):
-        return min(self._years)
+        """
+        Returns the first year it was produced
+        """
+        return self._years[0]
     
     def __str__(self):
         years_str = ", ".join(str(y) for y in self._years)
