@@ -7,6 +7,8 @@ class AutoModel:
     creates automodel class
     """
     def __init__(self, name : str, in_production : bool, years : list[int]):
+        if not years:
+            raise ValueError("years list cannot be empty")
         # Name of automodel
         self._name = name
         # If it's still in production
