@@ -3,20 +3,15 @@ Control and logic of the program
 """
 from manufacturer import Manufacturer
 from auto_model import AutoModel
+from sedan import Sedan
 def main():
-    """
-    Main function, control the rest of the program/call functions
-    """
-    m = Manufacturer("Ford", "USA")
-    print(m.get_name)
-    print(m.get_country)
-    print(m)
+    s = Sedan(
+        Manufacturer("Honda", "Japan"),
+            AutoModel("Civic", False, []),
+            28
+    )
+    print(s.how_far_with(10))
 
-    original_list = [2020, 2021]
-    am = AutoModel("F150", True, original_list)
-    print(am.get_years)
-    original_list.clear
-    print(am.get_years)
 
 
 if __name__ == "__main__":
