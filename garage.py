@@ -12,7 +12,7 @@ class Garage:
     # Create the getter
     @property
     def vehicles(self) -> list[Vehicle]:
-        return list[self._vehicles]
+        return list(self._vehicles)
 
     def add_vehicle(self, vehicles: Vehicle) -> None:
         """
@@ -25,3 +25,9 @@ class Garage:
         Empty the garage of all the vehicles
         """
         self._vehicles.clear()
+
+    def sort_by_release_year(self):
+        self._vehicles.sort()
+
+    def __str__(self) -> str:
+        return "\n".join(str(v) for v in self._vehicles)
