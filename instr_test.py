@@ -7,6 +7,8 @@ Or simply:
     pytest -v
 
 All tests must pass for full credit.
+
+All passing
 """
 
 import pytest
