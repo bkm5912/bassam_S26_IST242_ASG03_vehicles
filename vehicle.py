@@ -32,6 +32,13 @@ class Vehicle(ABC):
     @property
     def mpg(self) -> float:
         return self._mpg
+    
+    @property
+    def release_year(self) -> int:
+        """
+        Returns the first production year
+        """
+        return self._model.first_year
 
     # Create concrete method
     def how_far_with(self,
@@ -45,18 +52,18 @@ class Vehicle(ABC):
 
 
     # Comparison criteria
-    def __eq__(self, other) -> None:
+    def __eq__(self, other) -> bool:
         if not isinstance(other, Vehicle):
             return NotImplemented
         return self.release_year == other.release_year
 
 
-    def __lt__(self, other):
+    def __lt__(self, other) -> bool:
         if not isinstance(other, Vehicle):
             return NotImplemented
         return self.release_year < other.release_year
         
 
-    def __hash__(self):
+    def __hash__(self) -> int:
         return hash(self.release_year)
     
