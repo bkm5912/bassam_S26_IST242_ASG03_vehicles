@@ -14,11 +14,11 @@ class Garage:
     def vehicles(self) -> list[Vehicle]:
         return list(self._vehicles)
 
-    def add_vehicle(self, vehicles: Vehicle) -> None:
+    def add_vehicle(self, vehicle: Vehicle) -> None:
         """
         Add a vehicle to the list
         """
-        self._vehicles.append(Vehicle)
+        self._vehicles.append(vehicle)
 
     def empty_garage(self):
         """
