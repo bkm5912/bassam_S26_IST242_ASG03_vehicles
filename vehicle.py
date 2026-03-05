@@ -1,9 +1,11 @@
 from abc import ABC, abstractmethod
-# from functools import total_ordering # sorting purposes
+from functools import total_ordering # sorting purposes
 
 from manufacturer import Manufacturer
 from auto_model import AutoModel
 
+
+@total_ordering
 class Vehicle(ABC):
     """
     Abstract base class (ABC) for all vehicles
@@ -40,3 +42,21 @@ class Vehicle(ABC):
     @abstractmethod
     def number_of_wheels(self) -> int:
         pass
+
+
+    # Comparison criteria
+    def __eq__(self, other) -> None:
+        if not isinstance(other, Vehicle):
+            return NotImplemented
+        return self.release_year == other.release_year
+
+
+    def __lt__(self, other):
+        if not isinstance(other, Vehicle):
+            return NotImplemented
+        return self.release_year < other.release_year
+        
+
+    def __hash__(self):
+        return hash(self.release_year)
+    
