@@ -18,28 +18,28 @@ class AutoModel:
 
     # Properties
     @property
-    def name(self):
+    def name(self) -> str:
         """
         Returns the name
         """
         return self._name
     
     @property
-    def in_production(self):
+    def in_production(self) -> bool:
         """
         Returns if it's still in production
         """
         return self._in_production
     
     @property
-    def years(self):
+    def years(self) -> list[int]:
         """
         Returns the years of production
         """
         return list(self._years)
     
     @property
-    def first_year(self):
+    def first_year(self) -> int:
         """
         Returns the first year it was produced
         """
